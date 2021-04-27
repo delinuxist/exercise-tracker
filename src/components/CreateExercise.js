@@ -17,7 +17,7 @@ const CreateExercise = () => {
         const allUsers = res.data.map((user) => user.username);
         setUsers(allUsers);
         //already selecting value in the list
-        // setUsername(res.data[0].username);
+        setUsername(res.data[0].username);
       }
     });
   }, []);
