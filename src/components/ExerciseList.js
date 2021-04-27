@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Exercise from "./Exercise";
+import ExerciseItem from "./ExerciseItem";
 import axios from "axios";
 
 const ExerciseList = () => {
@@ -24,8 +24,8 @@ const ExerciseList = () => {
   //   return exercises.map((exercise) => {
   //     return (
   //       <Exercise
-  //         exercise={exercise}
-  //         deleteexercise={deleteExercise}
+  //         exercises={exercise}
+  //         // deleteexercise={deleteExercise}
   //         key={exercise._id}
   //       />
   //     );
@@ -50,10 +50,10 @@ const ExerciseList = () => {
           </tr>
         </thead>
         <tbody>
-          <Exercise
-            exercise={exercises}
-            // deleteexercise={deleteExercise}
-            // key={exercises._id}
+          <ExerciseItem
+            exercises={exercises}
+
+            // deleteExercise={deleteExercise}
           />
         </tbody>
       </table>
