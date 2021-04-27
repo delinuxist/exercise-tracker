@@ -13,7 +13,7 @@ const Exercise = ({ exercise, deleteExercise }) => {
       <td>{duration}</td>
       <td>{date.substring(0, 10)}</td>
       <td>
-        <Link className="btn btn-dark" to={"/edit"}>
+        <Link className="btn btn-dark" to={"/edit/" + _id}>
           Edit
         </Link>{" "}
         |{" "}
